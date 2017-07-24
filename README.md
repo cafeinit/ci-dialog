@@ -1,0 +1,2 @@
+# ci-dialog
+CafeInit Dialog
