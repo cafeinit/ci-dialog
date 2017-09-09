@@ -1,13 +1,15 @@
 /**
  * @fileoverview index
  * @author burning (www.cafeinit.com)
- * @version 2017.07.31
+ * @version 2017.09.09
  */
 
 import CIAlert from './CIAlert.vue'
+import CIModal from './CIModal.vue'
 
 const components = [
-  CIAlert
+  CIAlert,
+  CIModal
 ]
 
 const CIDialog = {
@@ -15,7 +17,8 @@ const CIDialog = {
   version: '1.0.0',
   plugin: plugin,
 
-  CIAlert
+  CIAlert,
+  CIModal
 }
 
 if (window.Vue) {

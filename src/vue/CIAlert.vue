@@ -1,5 +1,5 @@
 <template lang="pug">
-transition.ci-dialog(tabindex="0")
+ci-modal
   div.ci-dialog.ci-dialog-alert
     div.ci-dialog__title(v-if="title")
       h3 {{title}}
