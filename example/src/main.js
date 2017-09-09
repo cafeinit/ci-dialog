@@ -1,16 +1,18 @@
 /**
  * @fileoverview main
  * @author burning (www.cafeinit.com)
- * @version 2017.07.31
+ * @version 2017.09.09
  */
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import CIUIBase from 'ci-ui-base'
+import CIButton from 'ci-button'
 import CIDialog from 'ci-dialog'
 
 Vue.use(VueRouter)
 Vue.use(CIUIBase.plugin)
+Vue.use(CIButton.plugin)
 Vue.use(CIDialog.plugin)
 
 const router = new VueRouter({
@@ -29,9 +31,9 @@ const router = new VueRouter({
     },
 
     {
-      name: 'Tabs',
-      path: '/tabs',
-      component: resolve => require(['./views/Tabs.vue'], resolve)
+      name: 'Dialog',
+      path: '/dialog',
+      component: resolve => require(['./views/Dialog.vue'], resolve)
     }
   ]
 })

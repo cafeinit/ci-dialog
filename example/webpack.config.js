@@ -40,7 +40,7 @@ module.exports = {
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      'ci-navigation': path.resolve(__dirname, '../dist/ci-navigation.js')
+      'ci-dialog': path.resolve(__dirname, '../dist/ci-dialog.js')
     }
   },
 

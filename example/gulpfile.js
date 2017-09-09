@@ -4,8 +4,6 @@
  * @version 2017.07.28
  */
 
-'use strict'
-
 const gulp = require('gulp')
 const cleanCSS = require('gulp-clean-css')
 const less = require('gulp-less')
@@ -15,7 +13,7 @@ const pug = require('gulp-pug')
 const autoprefix = new LessAutoprefix({ browsers: ['last 5 versions'] })
 
 // tasks
-gulp.task('default', ['views', 'style', 'copy', 'copy:iconfont'])
+gulp.task('default', ['views', 'style', 'copy', 'copy:iconfont', 'copy:ci-button'])
 
 gulp.task('views', () => {
   return gulp.src([
@@ -53,4 +51,11 @@ gulp.task('copy:iconfont', () => {
     './node_modules/ci-ui-base/dist/iconfont/*',
   ])
     .pipe(gulp.dest('./dist/style/iconfont'))
+})
+
+gulp.task('copy:ci-button', () => {
+  return gulp.src([
+    './node_modules/ci-button/dist/*.css',
+  ])
+    .pipe(gulp.dest('./dist/style'))
 })

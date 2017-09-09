@@ -1,10 +1,8 @@
 /**
  * @fileoverview gulpfile
  * @author burning (www.cafeinit.com)
- * @version 2017.07.31
+ * @version 2017.09.09
  */
-
-'use strict'
 
 const gulp = require('gulp')
 const cleanCSS = require('gulp-clean-css')

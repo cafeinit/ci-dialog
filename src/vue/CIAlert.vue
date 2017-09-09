@@ -3,17 +3,18 @@ transition.ci-dialog(tabindex="0")
   div.ci-dialog.ci-dialog-alert
     div.ci-dialog__title(v-if="title")
       h3 {{title}}
-    div.ci-dialog__content(v-if="contentType === 'html'" v-html="content")
-    div.ci-dialog__content(v-else) {{content}}
+    div.ci-dialog__content
+      slot {{content}}
     div.ci-dialog__actions
-      ci-button(color="primary" modifier="radius" :title="okText")
+      ci-button(color="primary" modifier="radius" :text="okText"
+        @click="$emit('ok')")
 </template>
 
 <script>
 /**
  * @fileoverview CIAlert
  * @author burning (www.cafeinit.com)
- * @version 2017.07.31
+ * @version 2017.09.09
  */
 
 export default {
@@ -26,11 +27,6 @@ export default {
     },
 
     content: {
-      type: String,
-      default: ''
-    },
-
-    contentType: {
       type: String,
       default: ''
     },
