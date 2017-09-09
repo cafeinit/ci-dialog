@@ -1,0 +1,43 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "CafeInit navigation example",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cafeinit/ci-navigation.git"
+  },
+  "keywords": [
+    "CafeInit",
+    "CSS"
+  ],
+  "author": "burning",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cafeinit/ci-navigation/issues"
+  },
+  "homepage": "https://github.com/cafeinit/ci-navigation#readme",
+  "dependencies": {
+    "ci-ui-base": "^1.1.1",
+    "vue": "^2.4.1",
+    "vue-router": "^2.7.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-less": "^3.3.0",
+    "gulp-pug": "^3.3.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "vue": "^2.2.1",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}

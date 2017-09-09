@@ -1,0 +1,41 @@
+{
+  "name": "ci-dialog",
+  "version": "1.0.0",
+  "description": "CafeInit Dialog",
+  "main": "./dist/ci-dialog.js",
+  "scripts": {
+    "build": "gulp && webpack --progress --hide-modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cafeinit/ci-dialog.git"
+  },
+  "keywords": [
+    "CafeInit",
+    "CSS"
+  ],
+  "author": "burning",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cafeinit/ci-dialog/issues"
+  },
+  "homepage": "https://github.com/cafeinit/ci-dialog#readme",
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.0.0",
+    "css-loader": "^0.28.4",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.2.0",
+    "gulp-header": "^1.8.8",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "less-plugin-autoprefix": "^1.5.1",
+    "pug": "^2.0.0-rc.2",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0"
+  }
+}
